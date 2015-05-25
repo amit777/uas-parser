@@ -13,15 +13,18 @@ function finalizeResult(result) {
   }
 
   if(result.uaIcon !== 'unknown') {
-    result.uaIcon = 'http://user-agent-string.info/pub/img/ua/' + result.uaIcon;
+    //result.uaIcon = 'http://user-agent-string.info/pub/img/ua/' + result.uaIcon;
+    result.uaIcon = result.uaIcon;
   }
 
   if(result.osIcon !== 'unknown') {
-    result.osIcon = 'http://user-agent-string.info/pub/img/os/' + result.osIcon;
+    //result.osIcon = 'http://user-agent-string.info/pub/img/os/' + result.osIcon;
+    result.osIcon = result.osIcon;
   }
 
   if(result.deviceIcon !== 'unknown') {
-    result.deviceIcon = 'http://user-agent-string.info/pub/img/device/' + result.deviceIcon;
+    //result.deviceIcon = 'http://user-agent-string.info/pub/img/device/' + result.deviceIcon;
+    result.deviceIcon = result.deviceIcon;
   }
 
   if(result.deviceInfoUrl !== 'unknown') {
