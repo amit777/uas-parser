@@ -160,7 +160,7 @@ exports.lookup = function(userAgent) {
 };
 
 function updateData(callback) {
-  new Updater(updateInterval, function(error, newCache) {
+  new Updater({updateInterval: updateInterval, useLocalFile: true}, function(error, newCache) {
     if(!error) {
       cache = newCache;
     }
